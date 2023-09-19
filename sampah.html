@@ -1,0 +1,76 @@
+<html>
+<body>
+    <style>
+        fieldset {border:1px solid #cd1010;
+    width: 350px;
+	border-radius:8px;
+	box-shadow:0 0 10px #380a9c;}
+    
+    </style>
+
+    <fieldset>
+        <legend>Kalkulator sampah</legend>
+        <form>
+            <table border="0">
+                <tr>
+                    <td>Jenis Sampah</td>
+                    <td>
+                        <select name="jenis_sampah" id="jenis_sampah">
+                            <option id="kertas" value="3000">Kertas</option>
+                            <option id="plastik" value="4000">Plastik</option>
+                            <option id="logam" value="5000">Logam </option>
+                            <option id="kaca" value="6000">Kaca</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jumlah Sampah</td>
+                    <td><input type="text" id="jumlah_sampah"> kg</td>
+                    
+                </tr>
+               
+                <tr>
+                    <td>Total</td>
+                    <td><input type="text" id="Total"></td>
+                </tr>
+               
+                <tr>
+                    <td colspan="2">
+                       <center> <input type="button" onclick="Cek ()" value="Cek" </td>
+                        <input type="button" onclick="Cetak ()" value="Cetak" </td>
+                    </center>
+                    </table>
+
+        </form>
+
+        </tr>
+
+        </form>
+
+    </fieldset>
+    <script>
+        function Cek() {
+            var jenis_sampah,jumlah_sampah,kertas,plastik,logam,kaca;
+            
+            kertas = parseInt (document.getElementById('kertas').value);
+            plastik = parseInt (document.getElementById('plastik').value);
+            kaca = parseInt (document.getElementById('kaca').value);
+            logam = parseInt (document.getElementById('logam').value);
+
+            jenis_sampah = parseInt (document.getElementById('jenis_sampah').value);
+            jumlah_sampah = parseInt (document.getElementById('jumlah_sampah').value);
+            
+            var Total = (jenis_sampah*jumlah_sampah);
+            Total=parseInt(document.getElementById('Total').value=Total);
+
+           
+            
+    }
+    function Cetak() {
+   window.print();
+}
+    </script>
+
+</body>
+
+</html>

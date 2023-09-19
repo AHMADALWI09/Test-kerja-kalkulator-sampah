@@ -1,0 +1,8 @@
+Nama		: alwi
+HP		: 123
+Item		: KEMEJA > 150000
+Jumlah		: 2
+Total		: 300000
+Discount		: 0.05
+Potongan		: 15000
+Total Bayar		: 285000
